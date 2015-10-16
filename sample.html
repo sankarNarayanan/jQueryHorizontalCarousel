@@ -1,0 +1,48 @@
+<html>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<script src="jQuery v1.11.3.js"></script>
+<script>
+$(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+});
+</script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<script src="carousel.js"></script>
+<script>
+$( document ).ready(function() {
+    if ($('.container').html() && $('.container').html().length > 0) {
+                  var maxHeight = Math.max.apply(null, $('.container').children().map(function(){
+                        return $(this).outerHeight();
+                  }).get()), params = {
+                        swippedElement : 'content',
+                        parentDiv : 'container',
+                        height : maxHeight,
+                        elementWidth : $(this).width() - 12,
+                        showIndication : true,
+                        indicationDiv : 'indicationDiv',
+                        childPanel : '',
+                        indicationStyle : 'indicationDivStyle',
+                        indicationStyleActive : 'indicationDivStyleActive'
+                  };
+                  horizontalCarousel.setContents(params);
+            }
+});
+</script>
+<head>
+<link rel="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+	<div>
+	<div class="container" id ="imgContainer">
+		<img src="1.jpg" class = "content" data-page = "1">
+		<img src="2.jpg" class = "content" data-page = "2">
+		<img src="3.jpg" class = "content" data-page = "3">
+		<img src="4.jpg" class = "content" data-page = "4">
+		<img src="5.jpg" class = "content" data-page = "5">
+		<img src="6.jpg" class = "content" data-page = "6">
+	</div>
+	</div>	
+<body>
+</html>

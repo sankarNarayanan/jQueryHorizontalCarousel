@@ -1,0 +1,52 @@
+#imgContainer img{
+	height: 400px;
+	width: 500px;
+}
+
+/* Styles used in Horizontal carousel component */
+.carouselwrapperdivparent {
+      overflow: hidden;
+      -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+      -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14)
+}
+ 
+.carouselwrapperdiv {
+      position: relative;
+      top: 0;
+}
+ 
+.carouselcontents {
+      position: absolute;
+      display: inline;
+      left: 0;
+      color: black;
+}
+ 
+.carouseltransition {
+      -webkit-transition: -webkit-transform .2s ease-in-out;
+      -moz-transition: -moz-transform .2s ease-in-out;
+      -ms-transition: -ms-transform .2s ease-in-out;
+      transition: transform .2s ease-in-out;
+}
+ 
+.vertical-center-align {
+      height:inherit;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: -moz-box;
+      display: flex;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items:center;    
+}
+ 
+/* Styles used in Horizontal carousel component */
